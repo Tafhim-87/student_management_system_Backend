@@ -45,7 +45,7 @@ const userSchema = new mongoose.Schema({
   adminCode: {
     type: String,
     unique: true,
-    sparse: true,
+    default: null,
   },
   createdBy: {
     type: mongoose.Schema.Types.ObjectId,
